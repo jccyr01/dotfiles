@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/jccyr/dev/rails/test_bilingualapp'
+let g:netrw_dirhist_2='/home/jccyr/dev/rails/test_bilingualapp/app'
+let g:netrw_dirhist_3='/home/jccyr/dev/rails/test_bilingualapp/app/controllers'
+let g:netrw_dirhist_4='/home/jccyr/dev/ruby/nhl_stats'
+let g:netrw_dirhist_5='/media/Media/Media/Videos/TV Shows'
+let g:netrw_dirhist_6='/home/jccyr/scripts'
+let g:netrw_dirhist_7='/media/Media/Media/TV_Shows'
+let g:netrw_dirhist_8='/home/jccyr'
