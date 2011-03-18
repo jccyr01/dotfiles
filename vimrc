@@ -1,11 +1,11 @@
 " Activating pathogen
+filetype off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
 set hidden
 set number
 set ts=4 sts=4 sw=4 noexpandtab
-syntax on
 
 " Apperance
 if $COLORTERM == 'gnome-terminal' 
@@ -14,6 +14,10 @@ if $COLORTERM == 'gnome-terminal'
 else 
   colorscheme default 
 endif
+
+" Filetypes
+filetype plugin indent on
+syntax on
 
 " Source the vimrc file after saving it
 if has("autocmd")
