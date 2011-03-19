@@ -7,3 +7,6 @@
 [submodule "vim/bundle/vim-cucumber"]
 	path = vim/bundle/vim-cucumber
 	url = https://github.com/tpope/vim-cucumber.git
+[submodule "vim/bundle/vim-ruby-debugger"]
+	path = vim/bundle/vim-ruby-debugger
+	url = https://github.com/astashov/vim-ruby-debugger.git
