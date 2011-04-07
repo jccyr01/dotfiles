@@ -9,7 +9,7 @@ set ts=4 sts=4 sw=4 noexpandtab
 
 " Apperance
 if $COLORTERM == 'gnome-terminal' 
-  set term=gnome-256color 
+  set t_Co=256
   colorscheme railscasts 
 else 
   colorscheme default 
@@ -18,6 +18,10 @@ endif
 " Filetypes
 filetype plugin indent on
 syntax on
+
+" Status line
+set ruler
+set rulerformat=%55(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
 
 " Source the vimrc file after saving it
 if has("autocmd")
