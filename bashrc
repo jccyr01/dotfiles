@@ -81,6 +81,7 @@ if [[ -n "$PS1" ]] ; then
 	alias ll='ls -alF'
 	alias la='ls -A'
 	alias l='ls -CF'
+	alias diff='diff -EbwB'
 	
 	# Add an "alert" alias for long running commands.  Use like so:
 	#   sleep 10; alert
@@ -103,11 +104,11 @@ if [[ -n "$PS1" ]] ; then
 	fi
 fi
 
-if [ "$PS1" ] ; then  
-   mkdir -p -m 0700 /dev/cgroup/cpu/user/$$ > /dev/null 2>&1
-   echo $$ > /dev/cgroup/cpu/user/$$/tasks
-   echo "1" > /dev/cgroup/cpu/user/$$/notify_on_release
-fi
+#if [ "$PS1" ] ; then  
+#   mkdir -p -m 0700 /dev/cgroup/cpu/user/$$ > /dev/null 2>&1
+#   echo $$ > /dev/cgroup/cpu/user/$$/tasks
+#   echo "1" > /dev/cgroup/cpu/user/$$/notify_on_release
+#fi
 
 # This loads RVM into a shell session.
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
