@@ -104,11 +104,5 @@ if [[ -n "$PS1" ]] ; then
 	fi
 fi
 
-#if [ "$PS1" ] ; then  
-#   mkdir -p -m 0700 /dev/cgroup/cpu/user/$$ > /dev/null 2>&1
-#   echo $$ > /dev/cgroup/cpu/user/$$/tasks
-#   echo "1" > /dev/cgroup/cpu/user/$$/notify_on_release
-#fi
-
-# This loads RVM into a shell session.
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
