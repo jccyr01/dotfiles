@@ -27,7 +27,7 @@ if [[ -n "$PS1" ]] ; then
 	if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
 	    debian_chroot=$(cat /etc/debian_chroot)
 	fi
-	
+
 	# set a fancy prompt (non-color, unless we know we "want" color)
 	case "$TERM" in
 	    xterm-color) color_prompt=yes;;
@@ -82,6 +82,9 @@ if [[ -n "$PS1" ]] ; then
 	alias la='ls -A'
 	alias l='ls -CF'
 	alias diff='diff -EbwB'
+
+	#Make tmux 256 colors
+	alias tmux='tmux -2'
 	
 	# Add an "alert" alias for long running commands.  Use like so:
 	#   sleep 10; alert
@@ -104,5 +107,12 @@ if [[ -n "$PS1" ]] ; then
 	fi
 fi
 
+# rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+#Tmuxinator
+[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
+
+#Set default editor
+export EDITOR=vim
