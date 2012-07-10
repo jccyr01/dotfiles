@@ -28,3 +28,8 @@ if has("autocmd")
   autocmd bufwritepost .vimrc source $MYVIMRC
 endif
 
+" Search highlight
+set hls
+
+" Number formats
+set nrformats=
