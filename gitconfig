@@ -1,0 +1,12 @@
+[color]
+	ui = auto
+[user]
+	name = Jean-Christophe Cyr
+	email = jccyr01@gmail.com
+[credential]
+	helper = cache
+[core]
+	excludesfile = /home/jccyr/.gitignore_global
+	autocrlf = input
+[alias]
+	co = checkout

@@ -1,8 +1,11 @@
-command -v rbenv >/dev/null 2>&1 && {
+if [[ -d $HOME/.rbenv ]]; then
 	export PATH="$HOME/.rbenv/bin:$PATH"
 	eval "$(rbenv init -)"
-}
+fi
 
-export JAVA_HOME="/usr/lib/jvm/java-7-oracle"
+if [[ -d $HOME/.tmuxinator ]]; then
+	#tmuxinator
+	[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
+fi
 
 . ~/.bashrc
