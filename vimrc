@@ -8,12 +8,7 @@ set number
 set ts=4 sts=4 sw=4 noexpandtab
 
 " Apperance
-if $COLORTERM == 'gnome-terminal' 
-  set t_Co=256
-  colorscheme railscasts 
-else 
-  colorscheme default 
-endif
+colorscheme railscasts 
 
 " Filetypes
 filetype plugin indent on
@@ -33,3 +28,6 @@ set hls
 
 " Number formats
 set nrformats=
+
+" Keys
+imap jj <ESC>
