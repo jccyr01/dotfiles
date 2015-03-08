@@ -85,6 +85,8 @@ if [[ -n "$PS1" ]] ; then
 
 	#Make tmux 256 colors
 	alias tmux='tmux -2'
+	alias tmuxinator='TERM=screen-256color tmuxinator'
+	alias mux='tmuxinator'
 	
 	# Add an "alert" alias for long running commands.  Use like so:
 	#   sleep 10; alert
@@ -108,11 +110,14 @@ if [[ -n "$PS1" ]] ; then
 fi
 
 # rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+if [[ -d $HOME/.rbenv ]]; then
+	export PATH="$HOME/.rbenv/bin:$PATH"
+	eval "$(rbenv init -)"
+fi
 
 #Tmuxinator
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
 #Set default editor
 export EDITOR=vim
+export PATH=/opt/qt5/bin:$PATH
