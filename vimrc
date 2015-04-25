@@ -43,3 +43,4 @@ runtime macros/matchit.vim
 "autocmd BufEnter * NERDTreeMirror
 
 autocmd VimEnter * wincmd w
+
