@@ -9,12 +9,7 @@ set relativenumber
 set ts=4 sts=4 sw=4 noexpandtab
 
 " Apperance
-if $COLORTERM == 'gnome-terminal' 
-  set t_Co=256
-  colorscheme railscasts 
-else 
-  colorscheme default 
-endif
+colorscheme railscasts 
 
 " Filetypes
 filetype plugin indent on
@@ -37,6 +32,9 @@ set is
 " Number formats
 set nrformats=
 
+" Keys
+imap jj <ESC>
+
 set nocompatible
 filetype plugin on
 runtime macros/matchit.vim
@@ -45,3 +43,4 @@ runtime macros/matchit.vim
 "autocmd BufEnter * NERDTreeMirror
 
 autocmd VimEnter * wincmd w
+
