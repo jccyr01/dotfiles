@@ -1,0 +1,38 @@
+set autoindent
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set noexpandtab
+set hlsearch
+
+" Word stop on underscores
+set iskeyword-=_
+
+set contentassistmode
+
+" Map gf to open declaration
+
+" Map jj to get out of insert mode
+imap jj <esc>
+
+" Map F1 to get out of insert mode
+"   Delete org.eclipse.help.base.x.x.x.jar from Eclipse's plugins folder to prevent help from showing up.
+imap <F1> <esc>
+map <F1> <esc>
+cmap <F1> <esc>
+
+" Split line at cursor
+nnoremap <C-j> i<CR><esc>
+nnoremap <C-k> a<CR><esc>
+
+" Change selection with <spring:message /> tag
+vmap Ssm c<spring:message code="<C-r>"" /><esc>
+
+" Change selection with <c:out /> tag
+vmap Sco c<c:out value="<C-r>"" /><esc>
+
+" Surround selection with ${...}
+vmap Sel c${<BACKSPACE><BACKSPACE><C-r>"}<esc>
+
+nmap ga <C-A>
+nmap gx <C-X>
