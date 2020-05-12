@@ -8,5 +8,6 @@
 [core]
 	excludesfile = /home/jccyr/.gitignore_global
 	autocrlf = input
+	editor = vim
 [alias]
 	co = checkout
