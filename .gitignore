@@ -1,4 +1,4 @@
 *~
 *.swp
+vim/plugged
 vim/.netrwhist
-vim/bundle/*/doc/tags
