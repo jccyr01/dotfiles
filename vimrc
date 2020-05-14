@@ -37,7 +37,7 @@ imap jj <ESC>
 filetype plugin on
 
 "Automatically open NERDTree when vim opens
-autocmd VimEnter * NERDTree
+"autocmd VimEnter * NERDTree
 "autocmd BufEnter * NERDTreeMirror
 
 autocmd VimEnter * wincmd w
