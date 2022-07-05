@@ -8,5 +8,6 @@ Plug 'preservim/nerdtree'
 Plug 'sjl/gundo.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-surround'
+Plug 'sirtaj/vim-openscad'
 
 call plug#end()
